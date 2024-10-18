@@ -12,14 +12,14 @@ document.addEventListener("DOMContentLoaded",function() {
         return res.json();
     })
     .then(function(json) {
-        nameElement.innertText = json.name;
-        usernameElement.innertText = json.login;
+        nameElement.innerText = json.name;
+        usernameElement.innerText = json.login;
         avatarElement.src = json.avatar_url;
-        followingElement.innertText = json.following;
-        followersElement.innertText = json.followers;
+        followingElement.innerText = json.following;
+        followersElement.innerText = json.followers;
         repos.innertText = json.public_repos;
         linkElement.href = json.html_url;
     })
 
-    
+
 });
