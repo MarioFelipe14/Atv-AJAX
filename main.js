@@ -17,9 +17,8 @@ document.addEventListener("DOMContentLoaded",function() {
         avatarElement.src = json.avatar_url;
         followingElement.innerText = json.following;
         followersElement.innerText = json.followers;
-        repos.innertText = json.public_repos;
+        reposElement.innertText = json.public_repos;
         linkElement.href = json.html_url;
     })
-
 
 });
